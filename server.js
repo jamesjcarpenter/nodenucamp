@@ -16,7 +16,9 @@ app.use('/campsites', campsiteRouter);
 app.use('/promotions', promotionRouter);
 app.use('/partners', partnerRouter);
 
-// let express serve static files from the public foldernpm
+
+
+
 app.use(express.static(__dirname + '/public'));
 
 app.use((req, res) => {
